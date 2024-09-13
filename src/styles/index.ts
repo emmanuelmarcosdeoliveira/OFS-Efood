@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const colors = {
   background: '#FFF8F2',
@@ -7,28 +7,29 @@ export const colors = {
   tertiary: '#FFB930',
   white: '#fff',
 };
-
 export const GlobalStles = createGlobalStyle`
   *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+  }
+  body {
     font-family: "Roboto", system-ui, 'sans-serfi';
-    background-color: ${colors.background}
-   }
-   a {
-    text-decoration: none;
-    color: inherit
-   }
-   li {
-    list-style: none;
-   }
-   img {
-    max-width: 100%;
-   }
-`;
-
-export const Wapper = styled.div`
-  max-width: 1200px;
+    background-color: ${colors.background};
+    color: ${colors.primary};
+    }
+   .container {
+    max-width: calc(1366px - 342px);
+  width: 100%;
   margin-inline: auto;
+   }
+   a{
+    text-decoration: none;
+    color: inherit;
+     }
+
+     li {
+      list-style: none;
+     }
+
 `;
